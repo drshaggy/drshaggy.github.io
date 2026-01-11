@@ -1,0 +1,15 @@
+---
+title: "LV Log: A LabVIEW Logging Library"
+date: 2026-01-11 14:30:00 +0000
+categories: [LabVIEW]
+tags: [labview, open-source]
+---
+
+# LV Log: A LabVIEW Logging Library
+
+I have been spending a lot of time with C++ lately, and getting used to comfortable logging packages like spdlog. It struck me how easy it is to use and how extensible it could be. And I realised that I had not seen anything quite so elegent in LabVIEW. So I thought I would try and build a library myself. I have been working professionally with LabVIEW for several years, and have used many open source packages, but have never given back to the community. Now is the time. 
+
+## Requirements
+- Light weight: The library should be lightweight, with minimal included dependencies. It is important that there is no barrier to entry when using this library. I want this to be the first package everyone thinks of installing when they start a new project.
+- Easy to use: Ideally the libray should be as easy to use as possible, with 1 'Set Up' vi, and 1 vi to write to the log file/stream.
+- Extensible: The user should be able to extend the library to include other output streams. 
